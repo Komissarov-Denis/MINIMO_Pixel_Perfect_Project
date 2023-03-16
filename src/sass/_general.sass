@@ -1,0 +1,373 @@
+// h2
+// 	// font-family: 'Playfair Display', serif
+
+// 	/*font-size: 30px;
+// 	font-size: calc(20px + 10 * (100vw / 1200))
+// 	color: #626262
+
+// h3
+// 	// font-family: 'Ubuntu', sans-serif
+
+// 	/*font-size: 14px;
+// 	font-size: calc(10px + 4 * (100vw / 1200))
+// 	color: #b4ad9e
+
+// p
+// 	// font-family: 'Playfair Display', serif
+
+// 	/*font-size: 14px;
+// 	font-size: calc(10px + 4 * (100vw / 1200))
+// 	color: #626262
+// 	line-height: 170%
+
+	/*letter-spacing: -0.05px;
+	// word-spacing: -1.3px
+
+
+//-------------------------------------------------HEADER-------------------------------------------
+
+.promo
+	min-height: 976px
+	background-image: url(../img/promo/Rettangolo.png)
+	@include image_features
+	&_header
+		// min-height: 136px
+		// background: $promo_header_background_color
+		// top: 0
+		.row
+			min-height: 196px
+			display: flex
+			align-items: center
+		&_hamburger-box-menu
+			display: none
+			&_menu
+				&_list
+					margin: 0
+					padding: 0
+					display: flex
+					justify-content: space-evenly
+					list-style-type: none
+					&_item
+						display: flex						
+						&_link
+							color: #b4ad9e
+							font-size: 22px
+							text-decoration: none
+							font-weight: 600
+							&:hover
+								@include link_hover	
+		&_logo
+			display: flex
+			align-items: flex-start
+			&_link
+				display: flex
+				width: 100%
+				&_img
+					width: 100%				
+		&_menu
+			display: flex
+			justify-content: flex-end
+			&_list
+				margin: 0
+				padding: 0
+				display: flex
+				justify-content: space-between
+				list-style-type: none
+				width: 100%
+				&_item
+					display: flex
+					justify-content: space-between
+					&_link
+						color: $gold_color
+						font-size: 20px
+						font-family: 'Playfair Display', serif			
+						text-decoration: none
+						font-weight: 600
+						&:hover
+							@include link_hover
+
+// ----------------------------------------FIRST-POST-------------------------------------------	
+
+.post_block
+	display: flex
+	// min-height: 2262px
+	margin: 0 auto
+	padding-top: 80px
+	padding-bottom: 160px 
+	.row
+		display: flex
+		align-content: space-between
+		min-height: 2162px
+	&_first
+		padding-bottom: 116px
+		&_weekend
+			padding: 32px 0 32px 0
+			&_h3				
+				&_link					
+					@include h3
+					padding-top: 38px
+					text-decoration: none
+					&:hover
+						@include link_hover						
+			&_h2
+				@include h2
+				padding-top: 18px
+			&_p
+				@include p
+				padding-top: 18px
+		&_link
+			@include h3
+			font-weight: 500
+			text-decoration: none
+			&:hover
+				@include link_hover
+	&_second
+		display: flex
+		justify-content: space-between
+		padding: 0
+		&_festival,
+		&_coffee
+			width: 48%
+			&_img
+				width: 100%	
+				@include image_features		
+			&_h3
+				&_link					
+					@include h3
+					padding-top: 38px
+					text-decoration: none
+					&:hover
+						@include link_hover	
+			&_h2
+				@include h2
+				padding-top: 18px
+			&_p
+				@include p
+				padding-top: 18px
+	&_third
+		display: flex
+		justify-content: space-between
+		padding: 0
+		&_dream,
+		&_alps
+			width: 48%
+			&_img
+				width: 100%	
+				@include image_features		
+			&_h3
+				&_link					
+					@include h3
+					padding-top: 38px
+					text-decoration: none
+					&:hover
+						@include link_hover
+			&_h2
+				@include h2
+				padding-top: 18px
+			&_p
+				@include p
+				padding-top: 18px
+
+/*-----------------------------------------------SING-UP-----------------------------------------------
+
+.sign_up 
+	display: flex
+	background: #f0f0f0
+	.row
+		display: flex
+		justify-content: center
+		align-content: center	
+		min-height: 385px
+	&_block
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 30%
+		height: 150px
+		&_h2
+			&_link
+				display: flex
+				justify-content: center
+				width: 100%
+				@include h2
+				text-decoration: none
+				color: $gold_color
+				margin: 0
+				&:hover
+					@include link_hover
+		&_email
+			display: flex
+			justify-content: space-between
+			width: 100%
+			height: 40px
+			border-bottom: 2px solid
+			&_form
+				display: flex				
+				justify-content: space-between
+				border: none
+				align-items: center
+				width: 100%
+				&_input
+					font-family: 'Playfair Display', serif
+					font-size: 18px
+					color: $gold_color
+					border: none
+					outline: none
+					background: inherit
+					width: 100%
+				&_arrow
+					display: flex
+					justify-content: flex-end
+					height: 80%
+
+/*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------
+
+.second_post	
+	padding: 140px 0 140px 0
+	.row
+		min-height: 700px
+	&_block
+		display: flex
+		justify-content: space-between
+		padding: 0	
+		&_song,
+		&_winter
+			width: 48%
+			&_img
+				width: 100%	
+				@include image_features		
+			&_h3
+				&_link					
+					@include h3
+					padding-top: 38px
+					text-decoration: none
+					&:hover
+						@include link_hover
+			&_h2
+				@include h2
+				padding-top: 18px
+			&_p
+				@include p
+				padding-top: 18px
+
+/*---------------------------------------------LOAD-BUTTON---------------------------------------------
+
+.button
+	padding: 20px 0 20px 0
+	.row
+		min-height: 60px
+	&_block	
+		display: flex
+		justify-content: center
+		&_btn
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 100%
+			width: 12%
+			border: 1px solid #626262
+			color: #626262
+			font-family: 'Playfair Display', serif
+			font-size: 20px
+			text-decoration: none
+			&:hover
+				color: #ffffff
+				font-family: 'Playfair Display', serif
+				font-size: 20px
+				text-decoration: none
+				background-color: #626262
+
+/*---------------------------------------------COMMENT--------------------------------------------------
+
+.comment
+	padding: 40px 0 40px 0
+	.row
+		min-height: 200px
+	// &_form
+	// 	display: flex
+	// 	flex-direction: column
+	// 	justify-content: space-evenly
+	// 	// height: $height_456-344
+	// 	height: 456px
+	// 	&_box
+	// 		display: flex
+	// 		flex-direction: row
+	// 		justify-content: space-between
+	// 		height: 20%
+	// 		&_photo
+	// 			width: 7%
+	// 			border-radius: 6px
+	// 		&_text			
+	// 			width: 90%
+	// 			// height: $height_60-44
+	// 			// height: 20%
+	// 			background: none
+	// 			border-radius: 6px
+	// 			// border: 1px solid $contact_us_web_form_color
+	// 			// color: $white_color
+	// 			// font-size: $font-size_22-15
+	// 			font-size: 22px
+	// 			font-family: Montserrat
+	// 			margin: 0
+	// 	&_textarea
+	// 		width: 100%
+	// 			// height: $height_200-106
+	// 		height: 200px
+	// 		background: none
+	// 		border-radius: 6px
+	// 			// border: 1px solid $contact_us_web_form_color
+	// 			// color: $white_color
+	// 			// font-size: $font-size_22-15
+	// 		font-size: 22px
+	// 		resize: none
+	// 		font-family: Montserrat
+	// 		margin: 0	
+	// 	&_button      
+	// 		// @include button_blue_left
+	// 		height: 60px
+	// 		width: 215px
+	// 		font-size: 18px
+	// 		margin: 0
+
+/*---------------------------------------------FOOTER--------------------------------------------------
+
+.footer
+	display: flex
+	padding: 10px 0 10px 0
+	background: #f0f0f0	
+	.row
+		min-height: 100px
+	&_follow
+		display: flex
+		flex-direction: row
+		align-content: center
+		&_p
+			display: flex
+			flex-direction: row
+			align-items: center
+			margin: 0
+		&_list
+			display: flex
+			flex-direction: row
+			justify-content: space-evenly 
+			list-style-type: none
+			padding: 0
+			margin: 0
+			width: 50%
+			&_item
+				display: flex
+				align-content: center
+				&_link
+					display: flex
+					flex-direction: row
+					align-items: center
+					justify-content: center
+					&_img
+						width: 25%
+	&_licence
+		display: flex
+		flex-direction: row
+		justify-content: right					
+		align-items: center	
+		&_p
+			margin: 0

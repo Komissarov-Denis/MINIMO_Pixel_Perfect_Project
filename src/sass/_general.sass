@@ -1,39 +1,8 @@
-// h2
-// 	// font-family: 'Playfair Display', serif
-
-// 	/*font-size: 30px;
-// 	font-size: calc(20px + 10 * (100vw / 1200))
-// 	color: #626262
-
-// h3
-// 	// font-family: 'Ubuntu', sans-serif
-
-// 	/*font-size: 14px;
-// 	font-size: calc(10px + 4 * (100vw / 1200))
-// 	color: #b4ad9e
-
-// p
-// 	// font-family: 'Playfair Display', serif
-
-// 	/*font-size: 14px;
-// 	font-size: calc(10px + 4 * (100vw / 1200))
-// 	color: #626262
-// 	line-height: 170%
-
-	/*letter-spacing: -0.05px;
-	// word-spacing: -1.3px
-
-
 //-------------------------------------------------HEADER-------------------------------------------
 
 .promo
 	min-height: 196px
-	// background-image: url(../img/promo/Rettangolo.png)
-	// @include image_features
 	&_header
-		// min-height: 136px
-		// background: $promo_header_background_color
-		// top: 0
 		.row
 			min-height: 196px
 			display: flex
@@ -50,7 +19,7 @@
 					&_item
 						display: flex						
 						&_link
-							color: #b4ad9e
+							color: $gold_color
 							font-size: 22px
 							text-decoration: none
 							font-weight: 600
@@ -179,7 +148,7 @@
 
 .sign_up 
 	display: flex
-	background: #f0f0f0
+	background: $semi_gray_color
 	.row
 		display: flex
 		justify-content: center
@@ -272,17 +241,17 @@
 			align-items: center
 			height: 100%
 			width: 12%
-			border: 1px solid #626262
-			color: #626262
+			border: 1px solid $grey_color
+			color: $grey_color
 			font-family: 'Playfair Display', serif
 			font-size: 20px
 			text-decoration: none
 			&:hover
-				color: #ffffff
+				color: $white_color
 				font-family: 'Playfair Display', serif
 				font-size: 20px
 				text-decoration: none
-				background-color: #626262
+				background-color: $grey_color
 
 /*---------------------------------------------COMMENT--------------------------------------------------
 
@@ -320,12 +289,9 @@
 				min-height: 80px		
 				width: 100%
 				// height: $height_60-44
-				// height: 20%
 				background: none
 				border-radius: 16px
 				border-color: $gold_color
-				// border: 1px solid $contact_us_web_form_color
-				// color: $white_color
 				// font-size: $font-size_22-15
 				font-size: 22px
 				font-family: Montserrat
@@ -338,33 +304,14 @@
 					text-decoration: none
 					padding-left: 20px
 					&:hover
-						@include link_hover		
-	// 	&_textarea
-	// 		width: 100%
-	// 			// height: $height_200-106
-	// 		height: 200px
-	// 		background: none
-	// 		border-radius: 6px
-	// 			// border: 1px solid $contact_us_web_form_color
-	// 			// color: $white_color
-	// 			// font-size: $font-size_22-15
-	// 		font-size: 22px
-	// 		resize: none
-	// 		font-family: Montserrat
-	// 		margin: 0	
-	// 	&_button      
-	// 		// @include button_blue_left
-	// 		height: 60px
-	// 		width: 215px
-	// 		font-size: 18px
-	// 		margin: 0
+						@include link_hover	
 
 /*---------------------------------------------FOOTER--------------------------------------------------
 
 .footer
 	display: flex
 	padding: 10px 0 10px 0
-	background: #f0f0f0	
+	background: $semi_gray_color
 	.row
 		min-height: 100px
 	&_follow

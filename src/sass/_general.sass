@@ -27,9 +27,9 @@
 //-------------------------------------------------HEADER-------------------------------------------
 
 .promo
-	min-height: 976px
-	background-image: url(../img/promo/Rettangolo.png)
-	@include image_features
+	min-height: 196px
+	// background-image: url(../img/promo/Rettangolo.png)
+	// @include image_features
 	&_header
 		// min-height: 136px
 		// background: $promo_header_background_color
@@ -85,6 +85,13 @@
 						font-weight: 600
 						&:hover
 							@include link_hover
+
+// -------------------------------------BACKGROUND-FOTO----------------------------------------
+
+.background
+	min-height: 675px
+	background-image: url(../img/promo/Rettangolo.png)
+	@include image_features				
 
 // ----------------------------------------FIRST-POST-------------------------------------------	
 
@@ -280,14 +287,13 @@
 /*---------------------------------------------COMMENT--------------------------------------------------
 
 .comment
-	padding: 40px 0 40px 0
+	padding: 140px 0 140px 0
 	.row
 		min-height: 200px
 	&_h3
 		@include h3	
 	&_form
 		display: flex
-		// flex-direction: column
 		justify-content: space-evenly
 		// height: $height_456-344
 		min-height: 156px

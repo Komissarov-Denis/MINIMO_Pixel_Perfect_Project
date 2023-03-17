@@ -6,23 +6,23 @@
 @mixin h2
 	font-family: 'Playfair Display', serif
 	// font-size: 30px
-	font-size: calc(20px + 10 * (100vw / 1200))
+	font-size: $font-size_30-20
 	color: $grey_color
 
 @mixin h3
 	font-family: 'Ubuntu', sans-serif
 	// font-size: 14px;
-	font-size: calc(10px + 4 * (100vw / 1200))
+	font-size: $font-size_18-11
 	color: $gold_color
 
 @mixin p
 	font-family: 'Playfair Display', serif
 	// font-size: 14px;
-	font-size: calc(10px + 4 * (100vw / 1200))
+	font-size: $font-size_18-11
 	color: $grey_color
 	line-height: 170%
-	letter-spacing: -0.03px
-	word-spacing: 2.5px
+	// letter-spacing: -0.03px
+	word-spacing: 3px
 
 @mixin link_hover
 	color: $grey_color

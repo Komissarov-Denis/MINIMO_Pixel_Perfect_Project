@@ -6,24 +6,8 @@
 			min-height: 196px
 			display: flex
 			align-items: center
-		&_hamburger-box-menu
-			display: none
-			&_menu
-				&_list
-					margin: 0
-					padding: 0
-					display: flex
-					justify-content: space-evenly
-					list-style-type: none
-					&_item
-						display: flex						
-						&_link
-							color: $gold_color
-							font-size: 24px
-							text-decoration: none
-							font-weight: 600
-							&:hover
-								@include link_hover	
+		// &_hamburger-box-menu
+		// 	display: none	
 		&_logo
 			display: flex
 			align-items: flex-start
@@ -53,6 +37,8 @@
 						font-weight: 600
 						&:hover
 							@include link_hover
+		&_hamburger-box-menu
+			display: none					
 
 // -------------------------------------BACKGROUND-FOTO----------------------------------------
 
@@ -65,16 +51,15 @@
 
 .post_block
 	display: flex
-	// min-height: 2262px
 	margin: 0 auto
 	padding-top: 80px
 	padding-bottom: 160px 
 	.row
 		display: flex
 		align-content: space-between
-		min-height: 2162px
+		min-height: 2000px
 	&_first
-		padding-bottom: 116px
+		padding-bottom: 80px
 		&_weekend
 			padding: 32px 0 32px 0
 			&_h3				

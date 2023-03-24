@@ -227,12 +227,13 @@
 				display: none
 			&_hamburger-box-menu
 				display: flex	
+				justify-content: flex-end
 				padding: 0
 				&_menu
 					&_list
 						position: fixed
 						flex-direction: column
-						justify-content: space-evenly	
+						justify-content: center
 						align-items: center		
 						top: 0		
 						left: -100%
@@ -243,8 +244,12 @@
 						&_active
 							left: 0				
 						&_item
-							display: flex						
+							display: flex	
+							flex-direction: column
+							justify-content: space-evenly
+							height: 25%
 							&_link
+								display: flex
 								color: $gold_color
 								font-size: 24px
 								text-decoration: none
@@ -254,32 +259,31 @@
 				&_hamburger
 					display: flex
 					flex-direction: column
-					align-content: center
-					// display: block
-					// position: absolute          
-					// right: 9.5%
-					width: 40px 
-					height: 17px      
+					justify-content: flex-end
+					align-content: center					
+					// transform: translateY(-50%)       
+					right: 9.5%
+					width: 50px 
+					height: 20px      
 					span
-						// display: block
-						display: flex
+						display: flex						
 						height: 3px
 						width: 100%
 						background-color: $gold_color 
 						transition: 0.6s all
 						&:nth-child(2)
-							margin: 4px 0              
+							margin: 5px 0              
 					&_active
 						span 
-							// margin-top: -4px               
+							margin-top: -40px               
 							&:nth-child(1)
 								margin-top: 2px
-								transform: translateY(3px) rotate(-45deg)                    
+								transform: translateY(-7px) rotate(-45deg)                    
 							&:nth-child(2)
 								display: none                                             
 							&:nth-child(3)
 								margin-top: -2px
-								transform: translateY(3px) rotate(45deg)					
+								transform: translateY(-8px) rotate(45deg)					
 											
 
 // @media (max-width: 767.98px)

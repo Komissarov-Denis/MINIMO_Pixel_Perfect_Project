@@ -246,7 +246,7 @@
 		@include h3	
 	&_form
 		display: flex
-		justify-content: space-evenly
+		justify-content: space-between
 		min-height: 166px
 		&_fotobox
 			display: flex
@@ -261,12 +261,15 @@
 				border-color: $gold_color
 				text-align: center
 				color: $gold_color
+				// background-image: url(../icons/user.png)
+				@include image_features		
 		&_textbox
 			display: flex
 			flex-direction: column
-			justify-content: space-evenly
+			justify-content: flex-end
 			align-items: flex-start			
-			min-height: 100px		
+			min-height: 100px	
+			width: 80%	
 			&_text	
 				min-height: 80px		
 				width: 100%

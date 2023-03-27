@@ -451,6 +451,49 @@
 				// 	&_link
 				// 		padding-left: 20px															
 
+	.footer
+		// display: flex
+		flex-direction: column
+		padding: 10px 0 10px 0
+		// background: $semi_gray_color
+		.row
+			min-height: 100px
+		&_follow
+			justify-content: 	center
+			// display: flex
+			// flex-direction: row
+			// align-content: center
+			// &_p
+				// display: flex
+				// flex-direction: row
+				// align-items: center
+				// margin: 0
+			&_list
+				// display: flex
+				// flex-direction: row
+				// justify-content: flex-end 
+				// list-style-type: none
+				// padding: 0
+				// margin: 0
+				// width: 50%
+				&_item
+					// display: flex
+					// align-content: center
+					&_link
+						// display: flex
+						// flex-direction: row
+						// align-items: center
+						justify-content: flex-end
+						&_img
+							// width: 45%	
+		&_licence
+			// display: flex
+			// flex-direction: row
+			justify-content: 	center				
+			// align-items: center	
+			// &_p
+				// margin: 0
+
 @media (max-width: 575.98px)
 
 	.promo
@@ -520,6 +563,11 @@
 				&_p
 					padding-top: 18px
 
+	.sign_up 
+		.row
+		&_block
+			width: 80%				
+
 	.second_post
 		padding-right: 12px
 		padding-left: 12px	
@@ -554,7 +602,7 @@
 				height: 100%
 				width: 20%								
 
-@media (max-width: 455.58px)	
+@media (max-width: 455.98px)	
 
 	.button
 		padding: 20px 0 20px 0
@@ -562,4 +610,16 @@
 		&_block	
 			&_btn
 				height: 100%
-				width: 24%			
+				width: 24%	
+
+@media (max-width: 319.98px)
+	
+	.promo,
+	.background,
+	.post_block,
+	.sign_up,
+	.second_post,
+	.button,
+	.comment,
+	.footer
+		display: none

@@ -41,9 +41,14 @@
 // -------------------------------------BACKGROUND-FOTO----------------------------------------
 
 .background
-	min-height: 675px
-	background-image: url(../img/promo/Rettangolo.png)
-	@include image_features				
+	.row
+		display: flex
+		justify-content: center
+	&_block 
+		min-height: 675px
+		max-width: 3500px	
+		background-image: url(../img/promo/Rettangolo.png)
+		@include image_features		
 
 // ----------------------------------------FIRST-POST-------------------------------------------	
 
@@ -66,19 +71,21 @@
 				&_link					
 					@include h3
 					padding-top: 38px
-					text-decoration: none
+					font-size: 18px
 					&:hover
 						@include link_hover						
 			&_h2
 				@include h2
+				font-size: 30px
 				padding-top: 18px
 			&_p
 				@include p
 				padding-top: 18px
+				font-size: 18px
 		&_link
 			@include h3
 			font-weight: 500
-			text-decoration: none
+			font-size: 18px
 			&:hover
 				@include link_hover
 	&_second
@@ -94,16 +101,18 @@
 			&_h3
 				&_link					
 					@include h3
+					font-size: 18px
 					padding-top: 38px
-					text-decoration: none
 					&:hover
 						@include link_hover	
 			&_h2
 				@include h2
 				padding-top: 18px
+				font-size: 30px
 			&_p
 				@include p
 				padding-top: 18px
+				font-size: 18px
 	&_third
 		display: flex
 		justify-content: space-between
@@ -118,68 +127,77 @@
 				&_link					
 					@include h3
 					padding-top: 38px
-					text-decoration: none
+					font-size: 18px
 					&:hover
 						@include link_hover
 			&_h2
 				@include h2
 				padding-top: 18px
+				font-size: 30px
 			&_p
 				@include p
 				padding-top: 18px
+				font-size: 18px
 
 /*-----------------------------------------------SING-UP-----------------------------------------------
 
 .sign_up 
-	display: flex
-	background: $semi_gray_color
+	// display: flex
 	.row
 		display: flex
 		justify-content: center
-		align-content: center	
-		min-height: 385px
-	&_block
+		align-content: center
+	&_wrapper
+		padding: 0
 		display: flex
-		flex-direction: column
-		justify-content: space-between
-		width: 40%
-		height: 150px
-		&_h2
-			&_link
-				display: flex
-				justify-content: center
-				width: 100%
-				@include h2
-				text-decoration: none
-				color: $gold_color
-				margin: 0
-				&:hover
-					@include link_hover
-		&_email
+		justify-content: center
+		align-items: center
+		background: $semi_gray_color
+		max-width: 3500px
+		min-height: 385px
+		&_block
 			display: flex
+			flex-direction: column
 			justify-content: space-between
-			width: 100%
-			height: 40px
-			border-bottom: 2px solid
-			&_form
-				display: flex				
-				justify-content: space-between
-				border: none
-				align-items: center
-				width: 100%
-				&_input
-					font-family: 'Playfair Display', serif
-					font-size: 18px
-					color: $gold_color
-					border: none
-					outline: none
-					background: inherit
-					width: 100%
-				&_arrow
+			width: 25%
+			height: 150px
+			&_h2
+				&_link
 					display: flex
-					justify-content: flex-end
-					height: 80%
-					width: 9%
+					justify-content: center
+					width: 100%
+					@include h2
+					font-size: 30px
+					text-decoration: none
+					color: $gold_color
+					margin: 0
+					&:hover
+						@include link_hover
+			&_email
+				display: flex
+				justify-content: space-between
+				width: 100%
+				height: 40px
+				border-bottom: 2px solid
+				&_form
+					display: flex				
+					justify-content: space-between
+					border: none
+					align-items: center
+					width: 100%
+					&_input
+						font-family: 'Playfair Display', serif
+						font-size: 18px
+						color: $gold_color
+						border: none
+						outline: none
+						background: inherit
+						width: 100%
+					&_arrow
+						display: flex
+						justify-content: flex-end
+						height: 80%
+						width: 9%
 
 /*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------
 
@@ -201,15 +219,17 @@
 				&_link					
 					@include h3
 					padding-top: 38px
-					text-decoration: none
+					font-size: 18px
 					&:hover
 						@include link_hover
 			&_h2
 				@include h2
 				padding-top: 18px
+				font-size: 30px
 			&_p
 				@include p
 				padding-top: 18px
+				font-size: 18px
 
 /*---------------------------------------------LOAD-BUTTON---------------------------------------------
 
@@ -246,6 +266,7 @@
 		min-height: 200px
 	&_h3
 		@include h3	
+		font-size: 18px
 	&_form
 		display: flex
 		justify-content: space-between
@@ -289,6 +310,7 @@
 					@include h3
 					text-decoration: none
 					padding-left: 20px
+					font-size: 18px
 					&:hover
 						@include link_hover	
 
@@ -296,43 +318,55 @@
 
 .footer
 	display: flex
-	padding: 10px 0 10px 0
-	background: $semi_gray_color
-	.row
-		min-height: 100px
-	&_follow
+	justify-content: center
+	// padding: 10px 0 10px 0
+	.container-fluid
 		display: flex
-		flex-direction: row
-		align-content: center
-		&_p
+		justify-content: center	
+		max-width: 3500px
+		background: $semi_gray_color
+	&_wrapper
+		display: flex
+		justify-content: center
+		max-width: 100%
+		.row
+			min-height: 100px
+			width: 100%
+		&_follow
 			display: flex
 			flex-direction: row
-			align-items: center
-			margin: 0
-			@include p
-		&_list
-			display: flex
-			flex-direction: row
-			justify-content: space-evenly 
-			list-style-type: none
-			padding: 0
-			margin: 0
-			width: 50%
-			&_item
+			align-content: center
+			&_p
 				display: flex
-				align-content: center
-				&_link
+				flex-direction: row
+				align-items: center
+				margin: 0
+				@include p
+				font-size: 18px
+			&_list
+				display: flex
+				flex-direction: row
+				justify-content: space-evenly 
+				list-style-type: none
+				padding: 0
+				margin: 0
+				width: 50%
+				&_item
 					display: flex
-					flex-direction: row
-					align-items: center
-					justify-content: center
-					&_img
-						width: 35%
-	&_licence
-		display: flex
-		flex-direction: row
-		justify-content: right					
-		align-items: center	
-		&_p
-			margin: 0
-			@include p
+					align-content: center
+					&_link
+						display: flex
+						flex-direction: row
+						align-items: center
+						justify-content: center
+						&_img
+							width: 35%
+		&_licence
+			display: flex
+			flex-direction: row
+			justify-content: right					
+			align-items: center	
+			&_p
+				margin: 0
+				@include p
+				font-size: 18px

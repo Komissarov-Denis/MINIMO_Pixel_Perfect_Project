@@ -3,24 +3,18 @@
 	.promo
 		&_header
 			.row
-				min-height: $height_196-70
-			&_logo
-				&_link
-					width: 100%
-					&_img
-						width: 100%				
+				min-height: $height_196-70	
 			&_menu
 				&_list
-					margin: 0
-					padding: 0
-					width: 100%
 					&_item
 						&_link
 							font-size: $font-size_24-18
-							font-weight: 600
 
 	.background
-		min-height: $height_675-416
+		.row
+		&_block	
+			min-height: $height_675-416
+			width: 100%
 
 	.post_block
 		margin: 0 auto
@@ -34,13 +28,16 @@
 				padding: 32px 0 32px 0
 				&_h3				
 					&_link
+						font-size: $font-size_18-13
 						padding-top: 38px					
 				&_h2
+					font-size: $font-size_30-14
 					padding-top: 18px
 				&_p
+					font-size: $font-size_18-13
 					padding-top: 18px
 			&_link
-				font-weight: 500
+				font-size: $font-size_18-13
 		&_second
 			padding: 0
 			&_festival,
@@ -50,10 +47,13 @@
 					width: 100%	
 				&_h3
 					&_link
+						font-size: $font-size_18-13
 						padding-top: 38px
 				&_h2
+					font-size: $font-size_30-14
 					padding-top: 18px
 				&_p
+					font-size: $font-size_18-13
 					padding-top: 18px
 		&_third
 			padding: 0
@@ -64,33 +64,41 @@
 					width: 100%	
 				&_h3
 					&_link
+						font-size: $font-size_18-13
 						padding-top: 38px
 				&_h2
+					font-size: $font-size_30-14
 					padding-top: 18px
 				&_p
+					font-size: $font-size_18-13
 					padding-top: 18px
 
 	.sign_up 
 		.row	
-			min-height: $height_385-120
-		&_block
-			height: $height_150-100
-			&_h2
-				&_link
-					width: 100%
-					margin: 0
-			&_email
-				width: 100%
-				height: 40px
-				border-bottom: 2px solid
-				&_form
-					width: 100%
-					&_input
-						font-size: $font-size_18-13
+			// min-height: $height_385-120
+		&_wrapper
+			min-height: $height_385-120	
+			width: 100%
+			&_block
+				height: $height_150-100
+				width: 40%
+				&_h2
+					&_link
 						width: 100%
-					&_arrow
-						height: 70%
-						width: 10%
+						margin: 0
+						font-size: $font-size_30-14
+				&_email
+					width: 100%
+					height: 40px
+					border-bottom: 2px solid
+					&_form
+						width: 100%
+						&_input
+							font-size: $font-size_18-13
+							width: 100%
+						&_arrow
+							height: 70%
+							width: 10%
 
 	.second_post
 		padding-top: $height_140-50
@@ -106,11 +114,14 @@
 					width: 100%	
 				&_h3
 					&_link
+						font-size: $font-size_18-13
 						padding-top: 38px
 				&_h2
+					font-size: $font-size_30-14
 					@include h2
 					padding-top: 18px
 				&_p
+					font-size: $font-size_18-13
 					@include p
 					padding-top: 18px
 
@@ -131,6 +142,7 @@
 		.row			
 			min-height: $height_200-140
 		&_h3
+			font-size: $font-size_18-13
 		&_form
 			min-height: $height_166-120
 			&_fotobox
@@ -149,31 +161,45 @@
 					padding-left: 20px
 				&_h3
 					&_link
+						font-size: $font-size_18-13
 						padding-left: 20px
+
+	.footer
+		.container-fluid
+		&_wrapper	
+			.row
+			&_follow
+				&_p
+					font-size: $font-size_18-13	
+			&_licence
+				&_p
+					font-size: $font-size_18-13						
 
 @media (max-width: 1399.98px)
 
 	.sign_up 
 		.row
-		&_block
-			&_h2
-			&_email
-				&_form
-					&_arrow
-						height: 70%
-						width: 12%
+		&_wrapper	
+			&_block
+				&_h2
+				&_email
+					&_form
+						&_arrow
+							height: 70%
+							width: 12%
 
 @media (max-width: 1199.98px)
 
 	.sign_up 
 		.row
-		&_block
-			&_h2
-			&_email
-				&_form
-					&_arrow
-						height: 60%
-						width: 14%
+		&_wrapper	
+			&_block
+				&_h2
+				&_email
+					&_form
+						&_arrow
+							height: 60%
+							width: 14%
 
 @media (max-width: 991.98px) 
 
@@ -216,7 +242,7 @@
 							&_link
 								display: flex
 								color: $gold_color
-								font-size: 24px
+								font-size: $font-size_24-18
 								text-decoration: none
 								font-weight: 600
 								&:hover
@@ -252,12 +278,13 @@
 
 	.sign_up 
 		.row
-		&_block
-			&_h2
-			&_email
-				&_form
-					&_arrow
-						height: 50%
+		&_wrapper	
+			&_block
+				&_h2
+				&_email
+					&_form
+						&_arrow
+							height: 50%
 
 	.button
 		padding: 20px 0 20px 0
@@ -268,32 +295,35 @@
 				width: 14%
 
 	.footer
-		padding: 10px 0 10px 0
-		.row
-			min-height: 100px
-		&_follow
-			&_p
-				margin: 0
-			&_list
-				padding: 0
-				margin: 0
-				width: 50%
-				&_item
-					&_link
-						&_img
-							width: 45%					
+		// padding: 10px 0 10px 0
+		.container-fluid
+		&_wrapper	
+			.row
+				min-height: 100px
+			&_follow
+				&_p
+					margin: 0
+				&_list
+					padding: 0
+					margin: 0
+					width: 50%
+					&_item
+						&_link
+							&_img
+								width: 45%					
 
 @media (max-width: 767.98px)
 
 	.sign_up 
 		.row
-		&_block
-			width: 50%
-			&_h2
-			&_email
-				&_form
-					&_arrow
-						height: 50%
+		&_wrapper	
+			&_block
+				width: 50%
+				&_h2
+				&_email
+					&_form
+						&_arrow
+							height: 50%
 
 	.button
 		padding: 20px 0 20px 0
@@ -313,16 +343,18 @@
 				&_text														
 
 	.footer
-		flex-direction: column
-		.row
-		&_follow
-			justify-content: 	center
-			&_list
-				&_item
-					&_link
-						justify-content: flex-end
-		&_licence
-			justify-content: 	center
+		.container-fluid
+		&_wrapper	
+			flex-direction: column
+			.row
+			&_follow
+				justify-content: center
+				&_list
+					&_item
+						&_link
+							justify-content: flex-end
+			&_licence
+				justify-content: center
 
 @media (max-width: 575.98px)
 
@@ -356,8 +388,9 @@
 
 	.sign_up 
 		.row
-		&_block
-			width: 80%				
+		&_wrapper	
+			&_block
+				width: 80%				
 
 	.second_post
 		padding-right: 12px

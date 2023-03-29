@@ -41,14 +41,9 @@
 // -------------------------------------BACKGROUND-FOTO----------------------------------------
 
 .background
-	.row
-		display: flex
-		justify-content: center
-	&_block 
-		min-height: 675px
-		background-image: url(../img/promo/Rettangolo.png)
-		@include image_features	
-		max-width: 3500px			
+	min-height: 675px
+	background-image: url(../img/promo/Rettangolo.png)
+	@include image_features				
 
 // ----------------------------------------FIRST-POST-------------------------------------------	
 
@@ -71,21 +66,19 @@
 				&_link					
 					@include h3
 					padding-top: 38px
-					font-size: 18px
+					text-decoration: none
 					&:hover
 						@include link_hover						
 			&_h2
 				@include h2
-				font-size: 30px
 				padding-top: 18px
 			&_p
 				@include p
 				padding-top: 18px
-				font-size: 18px
 		&_link
 			@include h3
 			font-weight: 500
-			font-size: 18px
+			text-decoration: none
 			&:hover
 				@include link_hover
 	&_second
@@ -101,18 +94,16 @@
 			&_h3
 				&_link					
 					@include h3
-					font-size: 18px
 					padding-top: 38px
+					text-decoration: none
 					&:hover
 						@include link_hover	
 			&_h2
 				@include h2
 				padding-top: 18px
-				font-size: 30px
 			&_p
 				@include p
 				padding-top: 18px
-				font-size: 18px
 	&_third
 		display: flex
 		justify-content: space-between
@@ -127,76 +118,68 @@
 				&_link					
 					@include h3
 					padding-top: 38px
-					font-size: 18px
+					text-decoration: none
 					&:hover
 						@include link_hover
 			&_h2
 				@include h2
 				padding-top: 18px
-				font-size: 30px
 			&_p
 				@include p
 				padding-top: 18px
-				font-size: 18px
 
 /*-----------------------------------------------SING-UP-----------------------------------------------
 
 .sign_up 
 	display: flex
+	background: $semi_gray_color
 	.row
 		display: flex
 		justify-content: center
-		align-content: center
-	&_wrapper
-		display: flex
-		justify-content: center
-		align-items: center
-		background: $semi_gray_color
-		max-width: 3500px
+		align-content: center	
 		min-height: 385px
-		&_block
-			display: flex
-			flex-direction: column
-			justify-content: space-between
-			width: 25%
-			height: 150px
-			&_h2
-				&_link
-					display: flex
-					justify-content: center
-					width: 100%
-					@include h2
-					font-size: 30px
-					text-decoration: none
-					color: $gold_color
-					margin: 0
-					&:hover
-						@include link_hover
-			&_email
+	&_block
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 40%
+		height: 150px
+		&_h2
+			&_link
 				display: flex
-				justify-content: space-between
+				justify-content: center
 				width: 100%
-				height: 40px
-				border-bottom: 2px solid
-				&_form
-					display: flex				
-					justify-content: space-between
+				@include h2
+				text-decoration: none
+				color: $gold_color
+				margin: 0
+				&:hover
+					@include link_hover
+		&_email
+			display: flex
+			justify-content: space-between
+			width: 100%
+			height: 40px
+			border-bottom: 2px solid
+			&_form
+				display: flex				
+				justify-content: space-between
+				border: none
+				align-items: center
+				width: 100%
+				&_input
+					font-family: 'Playfair Display', serif
+					font-size: 18px
+					color: $gold_color
 					border: none
-					align-items: center
+					outline: none
+					background: inherit
 					width: 100%
-					&_input
-						font-family: 'Playfair Display', serif
-						font-size: 18px
-						color: $gold_color
-						border: none
-						outline: none
-						background: inherit
-						width: 100%
-					&_arrow
-						display: flex
-						justify-content: flex-end
-						height: 80%
-						width: 9%
+				&_arrow
+					display: flex
+					justify-content: flex-end
+					height: 80%
+					width: 9%
 
 /*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------
 
@@ -218,17 +201,15 @@
 				&_link					
 					@include h3
 					padding-top: 38px
-					font-size: 18px
+					text-decoration: none
 					&:hover
 						@include link_hover
 			&_h2
 				@include h2
 				padding-top: 18px
-				font-size: 30px
 			&_p
 				@include p
 				padding-top: 18px
-				font-size: 18px
 
 /*---------------------------------------------LOAD-BUTTON---------------------------------------------
 
@@ -265,7 +246,6 @@
 		min-height: 200px
 	&_h3
 		@include h3	
-		font-size: 18px
 	&_form
 		display: flex
 		justify-content: space-between
@@ -309,7 +289,6 @@
 					@include h3
 					text-decoration: none
 					padding-left: 20px
-					font-size: 18px
 					&:hover
 						@include link_hover	
 
@@ -331,7 +310,6 @@
 			align-items: center
 			margin: 0
 			@include p
-			font-size: 18px
 		&_list
 			display: flex
 			flex-direction: row
@@ -358,4 +336,3 @@
 		&_p
 			margin: 0
 			@include p
-			font-size: 18px

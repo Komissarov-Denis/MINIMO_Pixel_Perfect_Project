@@ -1,0 +1,369 @@
+//-------------------------------------------------HEADER-------------------------------------------
+
+.promo
+	&_header
+		.row
+			min-height: 196px
+			display: flex
+			align-items: center
+		&_logo
+			display: flex
+			align-items: flex-start
+			&_link
+				display: flex
+				width: 100%
+				&_img
+					width: 100%				
+		&_menu
+			display: flex
+			justify-content: flex-end
+			&_list
+				margin: 0
+				padding: 0
+				display: flex
+				justify-content: space-between
+				list-style-type: none
+				width: 100%
+				&_item
+					display: flex
+					justify-content: space-between
+					&_link
+						color: $gold_color
+						font-size: 24px
+						font-family: 'Playfair Display', serif			
+						text-decoration: none
+						font-weight: 600
+						&:hover
+							@include link_hover
+		&_hamburger-box-menu
+			display: none					
+
+// -------------------------------------BACKGROUND-FOTO----------------------------------------
+
+.background
+	.row
+		display: flex
+		justify-content: center
+	&_block 
+		min-height: 675px
+		max-width: 3500px	
+		background-image: url(../img/promo/Rettangolo.png)
+		@include image_features		
+
+// ----------------------------------------FIRST-POST-------------------------------------------	
+
+.post_block
+	display: flex
+	margin: 0 auto
+	padding-top: 80px
+	padding-bottom: 160px 
+	.row
+		display: flex
+		align-content: space-between
+		min-height: 2000px
+	&_first
+		padding-bottom: 80px
+		padding-left: 0
+		padding-right: 0
+		&_weekend
+			padding: 32px 0 32px 0
+			&_h3				
+				&_link					
+					@include h3
+					padding-top: 38px
+					font-size: 18px
+					&:hover
+						@include link_hover						
+			&_h2
+				@include h2
+				font-size: 30px
+				padding-top: 18px
+			&_p
+				@include p
+				padding-top: 18px
+				font-size: 18px
+		&_link
+			@include h3
+			font-weight: 500
+			font-size: 18px
+			&:hover
+				@include link_hover
+	&_second
+		display: flex
+		justify-content: space-between
+		padding: 0
+		&_festival,
+		&_coffee
+			width: 48%
+			&_img
+				width: 100%	
+				@include image_features		
+			&_h3
+				&_link					
+					@include h3
+					font-size: 18px
+					padding-top: 38px
+					&:hover
+						@include link_hover	
+			&_h2
+				@include h2
+				padding-top: 18px
+				font-size: 30px
+			&_p
+				@include p
+				padding-top: 18px
+				font-size: 18px
+	&_third
+		display: flex
+		justify-content: space-between
+		padding: 0
+		&_dream,
+		&_alps
+			width: 48%
+			&_img
+				width: 100%	
+				@include image_features		
+			&_h3
+				&_link					
+					@include h3
+					padding-top: 38px
+					font-size: 18px
+					&:hover
+						@include link_hover
+			&_h2
+				@include h2
+				padding-top: 18px
+				font-size: 30px
+			&_p
+				@include p
+				padding-top: 18px
+				font-size: 18px
+
+/*-----------------------------------------------SING-UP-----------------------------------------------
+
+.sign_up 
+	.row
+		display: flex
+		justify-content: center
+		align-content: center
+	&_wrapper
+		padding: 0
+		display: flex
+		justify-content: center
+		align-items: center
+		background: $semi_gray_color
+		max-width: 3500px
+		min-height: 385px
+		&_block
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			width: 25%
+			height: 150px
+			&_h2
+				&_link
+					display: flex
+					justify-content: center
+					width: 100%
+					@include h2
+					font-size: 30px
+					text-decoration: none
+					color: $gold_color
+					margin: 0
+					&:hover
+						@include link_hover
+			&_email
+				display: flex
+				justify-content: space-between
+				width: 100%
+				height: 40px
+				border-bottom: 2px solid
+				&_form
+					display: flex				
+					justify-content: space-between
+					border: none
+					align-items: center
+					width: 100%
+					&_input
+						font-family: 'Playfair Display', serif
+						font-size: 18px
+						color: $gold_color
+						border: none
+						outline: none
+						background: inherit
+						width: 100%
+					&_arrow
+						display: flex
+						justify-content: flex-end
+						height: 80%
+						width: 9%
+
+/*-----------------------------------------TOP-SONG-&-WINTER-DAYS--------------------------------------
+
+.second_post	
+	padding: 140px 0 140px 0
+	.row
+		min-height: 700px
+	&_block
+		display: flex
+		justify-content: space-between
+		padding: 0	
+		&_song,
+		&_winter
+			width: 48%
+			&_img
+				width: 100%	
+				@include image_features		
+			&_h3
+				&_link					
+					@include h3
+					padding-top: 38px
+					font-size: 18px
+					&:hover
+						@include link_hover
+			&_h2
+				@include h2
+				padding-top: 18px
+				font-size: 30px
+			&_p
+				@include p
+				padding-top: 18px
+				font-size: 18px
+
+/*---------------------------------------------LOAD-BUTTON---------------------------------------------
+
+.button
+	padding: 20px 0 20px 0
+	.row
+		min-height: 60px
+	&_block	
+		display: flex
+		justify-content: center
+		&_btn
+			display: flex
+			justify-content: center
+			align-items: center
+			height: 100%
+			width: 12%
+			border: 1px solid $grey_color
+			color: $grey_color
+			font-family: 'Playfair Display', serif
+			font-size: 20px
+			text-decoration: none
+			&:hover
+				color: $white_color
+				font-family: 'Playfair Display', serif
+				font-size: 20px
+				text-decoration: none
+				background-color: $grey_color
+
+/*---------------------------------------------COMMENT--------------------------------------------------
+
+.comment
+	padding: 140px 0 140px 0
+	.row
+		min-height: 200px
+	&_h3
+		@include h3	
+		font-size: 18px
+	&_form
+		display: flex
+		justify-content: space-between
+		min-height: 166px
+		&_fotobox
+			display: flex
+			flex-direction: row
+			justify-content: space-evenly
+			align-items: center
+			min-height: 100px
+			&_photo
+				height: 155px
+				width: 155px
+				border-radius: 78px
+				border-color: $gold_color
+				text-align: center
+				color: $gold_color
+				@include image_features		
+		&_textbox
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+			align-items: flex-start			
+			min-height: 100px	
+			width: 80%	
+			&_text	
+				min-height: 80px		
+				width: 100%
+				background: none
+				border-radius: 16px
+				border-color: $gold_color
+				font-size: 22px
+				font-family: Montserrat
+				margin: 0
+				padding-left: 20px
+				color: $gold_color
+				resize: none
+			&_h3
+				&_link
+					@include h3
+					text-decoration: none
+					padding-left: 20px
+					font-size: 18px
+					&:hover
+						@include link_hover	
+
+/*---------------------------------------------FOOTER--------------------------------------------------
+
+.footer
+	display: flex
+	justify-content: center
+	.container-fluid
+		display: flex
+		justify-content: center	
+		max-width: 3500px
+		background: $semi_gray_color
+	&_wrapper
+		display: flex
+		justify-content: center
+		max-width: 100%
+		.row
+			min-height: 100px
+			width: 100%
+		&_follow
+			display: flex
+			flex-direction: row
+			align-content: center
+			&_p
+				display: flex
+				flex-direction: row
+				align-items: center
+				margin: 0
+				@include p
+				font-size: 18px
+			&_list
+				display: flex
+				flex-direction: row
+				justify-content: space-evenly 
+				list-style-type: none
+				padding: 0
+				margin: 0
+				width: 50%
+				&_item
+					display: flex
+					align-content: center
+					&_link
+						display: flex
+						flex-direction: row
+						align-items: center
+						justify-content: center
+						&_img
+							width: 35%
+		&_licence
+			display: flex
+			flex-direction: row
+			justify-content: right					
+			align-items: center	
+			&_p
+				margin: 0
+				@include p
+				font-size: 18px

@@ -1,20 +1,16 @@
 @media (max-width: 1920px)
 
-	.promo
-		&_header
-			.row
-				min-height: $height_196-70	
-			&_menu
-				&_list
-					&_item
-						&_link
-							font-size: $font-size_24-18
+	.promo_background
 
-	.background
-		.row
-		&_block	
-			min-height: $height_675-416
-			width: 100%
+		.promo
+			&_header
+				.row
+					min-height: $height_196-70	
+				&_menu
+					&_list
+						&_item
+							&_link
+								font-size: $font-size_24-18
 
 	.post_block
 		margin: 0 auto
@@ -74,7 +70,7 @@
 					padding-top: 18px
 
 	.sign_up 
-		.row
+		// .row
 		&_wrapper
 			min-height: $height_385-120	
 			width: 100%
@@ -164,9 +160,9 @@
 						padding-left: 20px
 
 	.footer
-		.container-fluid
+		// .container-fluid
 		&_wrapper	
-			.row
+			// .row
 			&_follow
 				&_p
 					font-size: $font-size_18-13	
@@ -177,10 +173,10 @@
 @media (max-width: 1399.98px)
 
 	.sign_up 
-		.row
+		// .row
 		&_wrapper	
 			&_block
-				&_h2
+				// &_h2
 				&_email
 					&_form
 						&_arrow
@@ -190,10 +186,10 @@
 @media (max-width: 1199.98px)
 
 	.sign_up 
-		.row
+		// .row
 		&_wrapper	
 			&_block
-				&_h2
+				// &_h2
 				&_email
 					&_form
 						&_arrow
@@ -201,85 +197,86 @@
 							width: 14%
 
 @media (max-width: 991.98px) 
-
-	.promo
-		&_header
-			.row
-				min-height: $height_196-70				
-			&_logo
-				&_link
-					width: 100%
-					&_img
-						width: 100%				
-			&_menu
-				display: none
-			&_hamburger-box-menu
-				display: flex	
-				justify-content: flex-end
-				padding-right: 12px
-				&_menu
-					&_list
-						position: fixed
-						flex-direction: column
-						justify-content: center
-						align-items: center		
-						top: 0		
-						left: -100%
-						width: 50%
-						height: 100vh
-						background-color: rgba(0, 0, 0, 0.8)
-						transition: 0.6s all
-						padding: 0
-						&_active
-							left: 0				
-						&_item
-							display: flex	
-							flex-direction: column
-							justify-content: space-evenly
-							align-items: center
-							height: 25%
-							&_link
-								display: flex
-								color: $gold_color
-								font-size: $font-size_24-18
-								text-decoration: none
-								font-weight: 600
-								&:hover
-									@include link_hover
-				&_hamburger
-					display: flex
-					flex-direction: column
-					justify-content: flex-end
-					align-content: center					
-					// transform: translateY(-50%)       
-					right: 9.5%
-					width: 50px 
-					height: 20px      
-					span
-						display: flex						
-						height: 3px
+	.promo_background
+		background-image: url(../img/promo/promo2.png)
+		.promo
+			&_header
+				.row
+					min-height: $height_196-70				
+				&_logo
+					&_link
 						width: 100%
-						background-color: $gold_color 
-						transition: 0.6s all
-						&:nth-child(2)
-							margin: 5px 0              
-					&_active
-						span 
-							margin-top: -40px               
-							&:nth-child(1)
-								margin-top: 2px
-								transform: translateY(-7px) rotate(-45deg)                    
+						&_img
+							width: 100%				
+				&_menu
+					display: none
+				&_hamburger-box-menu
+					display: flex	
+					justify-content: flex-end
+					padding-right: 12px
+					&_menu
+						&_list
+							position: fixed
+							flex-direction: column
+							justify-content: center
+							align-items: center		
+							top: 0		
+							left: -100%
+							width: 50%
+							height: 100vh
+							background-color: rgba(0, 0, 0, 0.8)
+							transition: 0.6s all
+							padding: 0
+							&_active
+								left: 0				
+							&_item
+								display: flex	
+								flex-direction: column
+								justify-content: space-evenly
+								align-items: center
+								height: 25%
+								&_link
+									display: flex
+									color: $gold_color
+									font-size: $font-size_24-18
+									text-decoration: none
+									font-weight: 600
+									&:hover
+										@include link_hover
+					&_hamburger
+						display: flex
+						flex-direction: column
+						justify-content: flex-end
+						align-content: center					
+						// transform: translateY(-50%)       
+						right: 9.5%
+						width: 50px 
+						height: 20px      
+						span
+							display: flex						
+							height: 3px
+							width: 100%
+							background-color: $gold_color 
+							transition: 0.6s all
 							&:nth-child(2)
-								display: none                                             
-							&:nth-child(3)
-								margin-top: -2px
-								transform: translateY(-8px) rotate(45deg)		
+								margin: 5px 0              
+						&_active
+							span 
+								margin-top: -40px               
+								&:nth-child(1)
+									margin-top: 2px
+									transform: translateY(-7px) rotate(-45deg)                    
+								&:nth-child(2)
+									display: none                                             
+								&:nth-child(3)
+									margin-top: -2px
+									transform: translateY(-8px) rotate(45deg)		
 
 	.sign_up 
-		.row
+		// .row
 		&_wrapper	
 			&_block
-				&_h2
+				// &_h2
 				&_email
 					&_form
 						&_arrow
@@ -287,14 +284,14 @@
 
 	.button
 		padding: 20px 0 20px 0
-		.row
+		// .row
 		&_block	
 			&_btn
 				height: 100%
 				width: 14%
 
 	.footer
-		.container-fluid
+		// .container-fluid
 		&_wrapper	
 			.row
 				min-height: 100px
@@ -313,11 +310,11 @@
 @media (max-width: 767.98px)
 
 	.sign_up 
-		.row
+		// .row
 		&_wrapper	
 			&_block
 				width: 50%
-				&_h2
+				// &_h2
 				&_email
 					&_form
 						&_arrow
@@ -325,26 +322,26 @@
 
 	.button
 		padding: 20px 0 20px 0
-		.row
+		// .row
 		&_block	
 			&_btn
 				width: 18%														
 
 	.comment
-		.row
-		&_h3
+		// .row
+		// &_h3
 		&_form
 			&_fotobox
-				&_photo
+				// &_photo
 			&_textbox
 				width: 75%		
-				&_text														
+				// &_text														
 
 	.footer
-		.container-fluid
+		// .container-fluid
 		&_wrapper	
 			flex-direction: column
-			.row
+			// .row
 			&_follow
 				justify-content: center
 				&_list
@@ -356,13 +353,15 @@
 
 @media (max-width: 575.98px)
 
-	.promo
-		&_header
-			.row			
-			&_logo
-				width: 40%
-			&_hamburger-box-menu
-				width: 60%				
+	.promo_background
+		background-image: url(../img/promo/promo3.png)
+		.promo
+			&_header
+				// .row			
+				&_logo
+					width: 40%
+				&_hamburger-box-menu
+					width: 60%				
 
 	.post_block
 		padding-right: 12px
@@ -385,7 +384,7 @@
 						padding-top: 38px
 
 	.sign_up 
-		.row
+		// .row
 		&_wrapper	
 			&_block
 				width: 80%				
@@ -393,7 +392,7 @@
 	.second_post
 		padding-right: 12px
 		padding-left: 12px
-		.row
+		// .row
 		&_block
 			flex-direction: column
 			&_song,
@@ -401,7 +400,7 @@
 				width: 100%
 
 	.button
-		.row
+		// .row
 		&_block	
 			&_btn
 				width: 20%								
@@ -409,14 +408,14 @@
 @media (max-width: 455.98px)	
 
 	.button
-		.row
+		// .row
 		&_block	
 			&_btn
 				width: 24%	
 
 @media (max-width: 319.98px)
 	
-	.promo,
+	.promo_background,
 	.background,
 	.post_block,
 	.sign_up,

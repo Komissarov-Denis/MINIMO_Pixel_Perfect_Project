@@ -1,54 +1,59 @@
-//-------------------------------------------------HEADER-------------------------------------------
+.promo_background
+	min-height: 100vh
+	// max-width: 3500px	
+	background-image: url(../img/promo/promo.png)
+	@include image_features	
+	//-------------------------------------------------HEADER-------------------------------------------
 
-.promo
-	&_header
-		.row
-			min-height: 196px
-			display: flex
-			align-items: center
-		&_logo
-			display: flex
-			align-items: flex-start
-			&_link
+	.promo
+		&_header
+			.row
+				min-height: 196px
 				display: flex
-				width: 100%
-				&_img
-					width: 100%				
-		&_menu
-			display: flex
-			justify-content: flex-end
-			&_list
-				margin: 0
-				padding: 0
+				align-items: center
+			&_logo
 				display: flex
-				justify-content: space-between
-				list-style-type: none
-				width: 100%
-				&_item
+				align-items: flex-start
+				&_link
+					display: flex
+					width: 100%
+					&_img
+						width: 100%				
+			&_menu
+				display: flex
+				justify-content: flex-end
+				&_list
+					margin: 0
+					padding: 0
 					display: flex
 					justify-content: space-between
-					&_link
-						color: $gold_color
-						font-size: 24px
-						font-family: 'Playfair Display', serif			
-						text-decoration: none
-						font-weight: 600
-						&:hover
-							@include link_hover
-		&_hamburger-box-menu
-			display: none					
+					list-style-type: none
+					width: 100%
+					&_item
+						display: flex
+						justify-content: space-between
+						&_link
+							color: $gold_color
+							font-size: 24px
+							font-family: 'Playfair Display', serif			
+							text-decoration: none
+							font-weight: 600
+							&:hover
+								@include link_hover
+			&_hamburger-box-menu
+				display: none					
 
-// -------------------------------------BACKGROUND-FOTO----------------------------------------
+	// -------------------------------------BACKGROUND-FOTO----------------------------------------
 
-.background
-	.row
-		display: flex
-		justify-content: center
-	&_block 
-		min-height: 675px
-		max-width: 3500px	
-		background-image: url(../img/promo/Rettangolo.png)
-		@include image_features		
+	// .background
+	// 	.row
+	// 		display: flex
+	// 		justify-content: center
+	// 	&_block 
+	// 		min-height: 675px
+	// 		max-width: 3500px	
+	// 		background-image: url(../img/promo/Rettangolo.png)
+	// 		@include image_features		
 
 // ----------------------------------------FIRST-POST-------------------------------------------	
 
